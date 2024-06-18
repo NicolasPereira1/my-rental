@@ -1,0 +1,122 @@
+.card {
+    z-index: -10;
+    width: 500px;
+    height: 333px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    transition: width 0.3s ease-in;
+    border-radius: 10px;
+
+    & img {
+        user-select: none;
+        width: 500px;
+        height: 333px;
+        transition: filter 0.4s ease-out;
+        border-radius: 10px;
+    }
+
+    &:hover img {
+        filter: blur(1px) brightness(0.7);
+        transition: filter 0.4s ease-out;
+    }
+
+    .cardTitle {
+        position: relative;
+        inset: auto auto 50px 30px;
+        transition: inset .4s .2s ease-out;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &:hover .cardTitle {
+        inset: auto auto 170px 30px;
+        transition: inset .4s ease-out;
+    }
+
+    .description {
+        opacity: 0;
+        width: 400px;
+        position: relative;
+        inset: auto auto 160px 30px;
+        transition: opacity .3s ease-out;
+        text-align: left;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    &:hover {
+        .description {
+            opacity: 1;
+            transition: opacity .3s .1s ease-in;
+        }
+    }
+}
+
+.rightCard {
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+.leftCard {
+    margin-left: 5rem;
+    margin-right: auto;
+}
+
+.shrink {
+    width: 500px;
+}
+
+.expand {
+    width: 1000px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .card {
+        transition: height 0.3s ease-in;
+    }
+    .shrink {
+        height: 333px;
+    }
+    .expand {
+        width: 500px;
+        height: 666px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .card {
+        text-align: left;
+        width: 333px;
+        height: 222px;
+        & img {
+            width: 333px;
+            height: 222px;
+        }
+        .cardTitle {
+            inset: auto auto 50px 20px;
+        }
+        .description {
+            inset: auto auto 185px 20px;
+            width: 290px;
+        }
+        &:hover .cardTitle {
+            inset: auto auto 195px 20px;
+        }
+    }
+    .rightCard, .leftCard {
+        margin: 1rem auto;
+    }
+    .shrink {
+        height: 222px;
+    }
+    .expand {
+        width: 333px;
+        height: 485px;
+    }
+}

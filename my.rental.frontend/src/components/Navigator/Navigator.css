@@ -1,0 +1,55 @@
+.navigatorContainer {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem 4rem;
+    backdrop-filter: blur(10px);
+    .navigator {
+        display: flex;
+        align-items: center;
+        position: relative;
+        float: right;
+        margin: 0.5rem 0;
+        font-weight: 700;
+        color: inherit;
+        .buttonContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .navigatorContainer {
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .titleContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navigatorIcon{
+            font-size: 1.6rem;
+        }
+        .navigator {
+            padding: 2rem 1rem 1rem;
+            border-top: solid 1px;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: column;
+            float: left;
+            .buttonContainer {
+                border-left: solid 2px;
+                margin-left: 3em;
+                padding-left: 0.8em;
+            }
+        }
+    }
+}

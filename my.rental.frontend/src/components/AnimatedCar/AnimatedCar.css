@@ -1,0 +1,69 @@
+.animatedCar {
+    width: 50px;
+}
+.animatedBus {
+    width: 60px;
+}
+
+.animateVehicles {
+    position: absolute;
+    left: 1000px;
+    top: 0;
+    z-index: -30;
+    animation: driving 70s;
+}
+
+@keyframes driving {
+    0% {transform: rotate(90deg);}
+    2% { top: 100px; left: 1000px; }
+    5% { transform: rotate(90deg); }
+    6% { top: 400px; left: 1000px; transform: rotate(180deg); }
+    9% { transform: rotate(180deg); }
+    10% { top: 400px; left: 200px; transform: rotate(90deg); }
+    13% { transform: rotate(90deg); }
+    14% { top: 800px; left: 200px; transform: rotate(0deg); }
+    17% { transform: rotate(0deg); }
+    18% { top: 800px; left: 1000px; transform: rotate(90deg); }
+    21% { transform: rotate(90deg); }
+    22% { top: 1200px; left: 1000px; transform: rotate(180deg); }
+    25% { transform: rotate(180deg); }
+    26% { top: 1200px; left: 200px; transform: rotate(90deg); }
+    29% { transform: rotate(90deg); }
+    30% { top: 1600px; left: 200px; transform: rotate(0deg); }
+    33% { transform: rotate(0deg); }
+    34% { top: 1600px; left: 1000px; transform: rotate(90deg); }
+    37% { transform: rotate(90deg); }
+    38% { top: 2000px; left: 1000px; transform: rotate(180deg); }
+    41% { transform: rotate(180deg); }
+    42% { top: 2000px; left: 200px; transform: rotate(90deg); }
+    45% { transform: rotate(90deg); }
+    46% { top: 2400px; left: 200px; transform: rotate(0deg); }
+    49% { transform: rotate(0deg); }
+    50% { top: 2400px; left: 1000px; transform: rotate(90deg); }
+    53% { transform: rotate(90deg); }
+    54% { top: 2800px; left: 1000px; transform: rotate(180deg); }
+    57% { transform: rotate(180deg); }
+    58% { top: 2800px; left: 200px; transform: rotate(90deg); }
+    61% { transform: rotate(90deg); }
+    62% { top: 3200px; left: 200px; transform: rotate(0deg); }
+    65% { transform: rotate(0deg); }
+    66% { top: 3200px; left: 1000px; transform: rotate(90deg); }
+    69% { transform: rotate(90deg); }
+    70% { top: 3600px; left: 1000px; transform: rotate(180deg); }
+    73% { transform: rotate(180deg); }
+    74% { top: 3600px; left: 200px; transform: rotate(90deg); }
+    77% { transform: rotate(90deg); }
+    78% { top: 4000px; left: 200px; transform: rotate(0deg); }
+    81% { transform: rotate(0deg); }
+    82% { top: 4000px; left: 1000px; transform: rotate(90deg); }
+    85% { transform: rotate(90deg); }
+    86% { top: 4400px; left: 1000px; transform: rotate(180deg); }
+    89% { transform: rotate(180deg); }
+    90% { top: 4400px; left: 200px; transform: rotate(90deg); }
+    93% { transform: rotate(90deg); }
+    94% { top: 4800px; left: 200px; transform: rotate(0deg); }
+    97% { transform: rotate(0deg); }
+    98% { top: 4800px; left: 1000px; transform: rotate(90deg); }
+    99% { top: 5000px; left: 1000px; }
+    100% { top: 5000px; left: 1000px; }
+}

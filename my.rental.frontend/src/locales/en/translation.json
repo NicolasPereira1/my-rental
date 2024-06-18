@@ -1,0 +1,36 @@
+{
+  "greetings": "Welcome on",
+  "card": {
+    "show": "Show details",
+    "hide": "Hide details",
+    "details": "Useful information:",
+    "seconds": "Sec",
+    "seat": "Seats",
+    "luggage":  "Luggage",
+    "noLuggage":  "No luggage",
+    "book": "Book it"
+  },
+  "navigator": {
+    "home": "Home",
+    "vehicles": "Vehicles",
+    "yourRental": "Your rental",
+    "account": "Account"
+  },
+  "bookingForm": {
+    "title": "Rent the car",
+    "pickUp": "Pick up:",
+    "return": "Return:",
+    "pickUpDate": "Pick up date:",
+    "returnDate": "Return date:",
+    "placeholder1": "Airport",
+    "placeholder2": "London",
+    "placeholder3": "Thursday, May 30",
+    "placeholder4": "Tuesday, June 11",
+    "search": "Show cars"
+  },
+  "calendar" : {
+    "months" : ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    "weekdays": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+  }
+
+}

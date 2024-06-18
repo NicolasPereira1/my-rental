@@ -1,0 +1,22 @@
+.infoSpan {
+    opacity: 0;
+    position: relative;
+    inset: auto auto 150px 30px;
+    cursor: pointer;
+    color: white;
+    margin: 0 10px 10px 0;
+    .icon {
+        vertical-align: middle;
+    }
+}
+
+.card:hover .infoSpan {
+    opacity: 1;
+    transition: opacity .3s .1s ease-in;
+}
+
+@media only screen and (max-width: 880px) {
+    .infoSpan {
+        inset: auto auto 175px 20px;
+    }
+}

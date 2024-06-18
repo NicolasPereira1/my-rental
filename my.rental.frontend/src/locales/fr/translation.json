@@ -1,0 +1,35 @@
+{
+  "greetings": "Bienvenue sur",
+  "card": {
+    "show": "En savoir plus",
+    "hide": "Moins de détails",
+    "details": "Information pratiques:",
+    "seat": "Sièges",
+    "seconds": "Sec",
+    "luggage":  "Valise",
+    "noLuggage":  "Pas de valise",
+    "book": "Réserver"
+  },
+  "navigator": {
+    "home": "Accueil",
+    "vehicles": "Véhicules",
+    "yourRental": "Locations",
+    "account": "Compte"
+  },
+  "bookingForm": {
+    "title": "Louer une voiture",
+    "pickUp": "Retrait:",
+    "return": "Retour:",
+    "pickUpDate": "Date de départ:",
+    "returnDate": "Date de retour:",
+    "placeholder1": "Aéroport",
+    "placeholder2": "Londres",
+    "placeholder3": "jeudi 30 mai",
+    "placeholder4": "mardi 11 juin",
+    "search": "Voir"
+  },
+  "calendar": {
+    "months": ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+    "weekdays": ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
+  }
+}

@@ -1,0 +1,89 @@
+.detailContainer {
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+    transition: opacity .3s .1s ease-in;
+    .detailTitle {
+        display: inline;
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+    & hr {
+        width: 430px;
+        margin-bottom: 2rem;
+    }
+    .detailDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2.4rem;
+    }
+    .detailIconContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & span {
+            font-size: 1.6rem;
+        }
+        & p {
+            font-size: .9rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+    & button {
+        float: right;
+        font-size: 1rem;
+        margin: 1.5rem 1rem;
+        padding: .8rem 1.2rem;
+    }
+}
+
+.rightCardDetail {
+    left: 30px;
+}
+.leftCardDetail {
+    right: 30px;
+}
+
+.closeCross {
+    font-size: 1.4rem;
+    float: right;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1320px) {
+    .detailContainer {
+        left: 30px;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .detailContainer {
+        & hr {
+            width: 280px;
+            margin-bottom: 0;
+        }
+        .detailDiv {
+            margin-top: 1rem;
+        }
+        .detailIconContainer {
+            & span {
+                font-size: 1.5rem;
+            }
+            & p {
+                font-size: .8rem;
+            }
+        }
+        & button {
+            position: relative;
+            right: 50%;
+            transform: translateX(50%);
+            margin: 1.5rem 0;
+        }
+    }
+    .closeCross {
+        font-size: 1.1rem;
+    }
+}

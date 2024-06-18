@@ -1,0 +1,25 @@
+.item {
+    border-left: solid 3px;
+    & a {
+        margin: 0 .5rem;
+        padding: 0 1rem;
+        font-size: 1.2em;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+}
+.lastItem {
+    border-right: solid 3px;
+    margin-right: .5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .item {
+        border: none;
+        border-left: solid 2px;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        font-size: 0.8rem;
+    }
+}

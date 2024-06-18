@@ -1,0 +1,16 @@
+.titleSpan {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    float: left;
+    .title {
+        margin-left: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .titleSpan {
+        display: flex;
+        font-size: 1.3rem;
+    }
+}

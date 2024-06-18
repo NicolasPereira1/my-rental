@@ -1,0 +1,19 @@
+.flagImage {
+    user-select: none;
+    border-radius: 50%;
+    border: solid .03rem;
+    height: 1.4rem;
+    width: 1.4rem;
+    cursor: pointer;
+    margin: 0 0.7rem;
+    &:hover {
+        filter: brightness(90%);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .flagImage {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+}

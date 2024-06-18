@@ -1,0 +1,26 @@
+.previewContainer {
+    position: sticky;
+    z-index: 25;
+    margin: -6rem 6rem 0;
+    padding: 2rem 3rem 5rem 3rem;
+    border: solid 1px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
+.previewTitle {
+    font-size: 1.7rem;
+    margin: 1rem auto 3rem 1rem;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 920px) {
+    .previewContainer {
+        text-align: center;
+        margin: 0;
+        padding: 1rem 0 0;
+        border: none;
+        border-radius: 0;
+    }
+}

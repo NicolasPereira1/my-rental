@@ -1,0 +1,45 @@
+version: '2'
+
+services:
+  database:
+    image: 'postgres'
+    healthcheck:
+      test: ["CMD", "pg_isready", "-h", "127.0.0.1"]
+    environment:
+      - POSTGRES_USER=rental
+      - POSTGRES_PASSWORD=rental
+    ports:
+      - 5432:5432
+  backend:
+    build: ./my.rental.backend
+    volumes:
+      - ./my.rental.backend:/backend
+    ports:
+      - 8080:80
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 1
+      start_period: 5s
+    depends_on:
+      database:
+       condition: service_healthy
+    environment: 
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=rental
+      - SPRING_DATASOURCE_PASSWORD=rental   
+  frontend:
+    build: 
+      context: ./my.rental.frontend
+      target: dev
+    volumes:
+      - ./my.rental.frontend:/frontend
+      - node_modules:/frontend/node_modules/
+    ports:
+      - 3000:3000
+    depends_on:
+      backend:
+        condition: service_healthy
+volumes:
+  node_modules:

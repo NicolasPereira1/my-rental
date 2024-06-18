@@ -1,0 +1,14 @@
+.themeButton {
+    display: flex;
+    cursor: pointer;
+    font-size: 1.7rem;
+    &:hover {
+        filter: brightness(95%);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .themeButton {
+        font-size: 1.5rem;
+    }
+}
